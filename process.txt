@@ -1,0 +1,42 @@
+Redirect -
+
+In views.py-
+It contains ArticleCounterRedirectView class which will redirect the url from counter to details,i.e., article-detail.
+It also contains the ArticleDetail class which will show article-detail data.
+
+In urls.py-
+It will call the class ArticleCounterRedirectView and ArticleDetail from views in urls.py and redirect to the path counter/<int:pk>/
+and details/<int:pk>
+And go-to-django/ will redirect to the given url in urls.py,i.e.,https://djangoproject.com.
+
+In models.py-
+It contains the Article and ArticleDetail class which will create the fields in the database in the admin page.
+
+In admin.py-
+In this file, Article and ArticleDetail Class are called from models and registering in the admin page to create the database.
+
+In settings.py-
+In INSTALLED_APPS, hello app is defined and in TEMPLATES,in DIR templates including html page is defined.
+
+In templates/hello folder-
+article_detail.html file is created which will show the data store in the models.
+
+
+MonthArchive -
+
+In views.py-
+It contains ArticleMonthArchiveView class which will direct to the url of month.
+
+In urls.py-
+It will call the class ArticleMonthArchiveView from views in urls.py and direct to the path <int:year>/<int:month>/ and
+ <int:year>/<str:month>/
+and details/<int:pk>
+
+In models.py-
+It contains the Article class which will create the fields in the database in the admin page.
+
+In admin.py-
+In this file, Article Class are called from models and registering in the admin page to create the database.
+
+In settings.py-
+In INSTALLED_APPS, hello app is defined.
